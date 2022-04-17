@@ -1,4 +1,4 @@
-import osLocale from 'os-locale';
+// import osLocale from 'os-locale';
 
 import * as zhCN from './zh-CN';
 import * as enUS from './en-US';
@@ -8,7 +8,8 @@ const languages = {
     'en-US': enUS,
 };
 
-const locale = osLocale.sync() || 'en-US';
+// const locale = osLocale.sync() || 'en-US';
+const locale = 'en-US';
 
 export default function i18n(key: keyof typeof enUS | keyof typeof zhCN) {
     // @ts-ignore
