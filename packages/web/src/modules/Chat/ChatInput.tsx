@@ -295,7 +295,7 @@ function ChatInput() {
 
     async function handleSendImage() {
         if (!connect) {
-            return Message.error('发送消息失败, 您当前处于离线状态');
+            return Message.error('Не удалось отправить сообщение, вы сейчас не в сети');
         }
         const image = await readDiskFile(
             'blob',
@@ -314,7 +314,7 @@ function ChatInput() {
     }
     async function handleSendFile() {
         if (!connect) {
-            Message.error('发送消息失败, 您当前处于离线状态');
+            Message.error('Не удалось отправить сообщение, вы сейчас не в сети');
             return;
         }
         const file = await readDiskFile('blob');
@@ -361,7 +361,7 @@ function ChatInput() {
         // eslint-disable-next-line react/destructuring-assignment
         if (!connect) {
             e.preventDefault();
-            return Message.error('发送消息失败, 您当前处于离线状态');
+            return Message.error('Не удалось отправить сообщение, вы сейчас не в сети');
         }
         const { items, types } =
             e.clipboardData || e.originalEvent.clipboardData;
@@ -405,7 +405,7 @@ function ChatInput() {
 
     function sendTextMessage() {
         if (!connect) {
-            return Message.error('发送消息失败, 您当前处于离线状态');
+            return Message.error('Не удалось отправить сообщение, вы сейчас не в сети');
         }
 
         // @ts-ignore
@@ -564,7 +564,7 @@ function ChatInput() {
 
     function handleSendCode(language: string, rawCode: string) {
         if (!connect) {
-            return Message.error('发送消息失败, 您当前处于离线状态');
+            return Message.error('Не удалось отправить сообщение, вы сейчас не в сети');
         }
 
         if (rawCode === '') {
@@ -646,7 +646,7 @@ function ChatInput() {
                 <input
                     className={Style.input}
                     type="text"
-                    placeholder="随便聊点啥吧, 不要无意义刷屏~~"
+                    placeholder="Просто поговорите о чем-нибудь, не проводите пальцем по экрану без смысла"
                     maxLength={2048}
                     ref={$input}
                     onKeyDown={handleInputKeyDown}

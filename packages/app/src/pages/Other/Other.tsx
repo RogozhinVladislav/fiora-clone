@@ -153,11 +153,11 @@ function Other() {
                     style={styles.logoutButton}
                     onPress={logout}
                 >
-                    <Text>退出登录</Text>
+                    <Text>Войдите</Text>
                 </Button>
             ) : (
                 <Button block style={styles.logoutButton} onPress={login}>
-                    <Text>登录 / 注册</Text>
+                    <Text>Зарегистрироваться</Text>
                 </Button>
             )}
             <View style={styles.copyrightContainer}>

@@ -35,7 +35,7 @@ function FunctionBar() {
     });
 
     const context = useContext(ShowUserOrGroupInfoContext);
-    const placeholder = '搜索群组/用户';
+    const placeholder = 'Поиск групп/пользователей';
 
     function resetSearch() {
         toggleSearchResultVisible(false);
@@ -83,7 +83,7 @@ function FunctionBar() {
                 if (result?.users?.length || result?.groups?.length) {
                     setSearchResult(result);
                 } else {
-                    Message.warning('没有搜索到内容, 换个关键字试试吧~');
+                    Message.warning('Контент не найден, попробуйте другое ключевое слово');
                     setSearchResult({ users: [], groups: [] });
                 }
             }
@@ -183,12 +183,12 @@ function FunctionBar() {
                 renderTabBar={() => <ScrollableInkTabBar />}
                 renderTabContent={() => <TabContent />}
             >
-                <TabPane tab="全部" key="all">
+                <TabPane tab="Все" key="all">
                     {searchResult.users.length === 0 &&
                     searchResult.groups.length === 0 ? (
                             // eslint-disable-next-line react/jsx-indent
                             <p className={Style.none}>
-                                没有搜索到内容, 换个关键字试试吧~
+                                Контент не найден, попробуйте другое ключевое слово
                             </p>
                         ) : (
                             <div className={Style.allList}>
@@ -257,10 +257,10 @@ function FunctionBar() {
                             </div>
                         )}
                 </TabPane>
-                <TabPane tab="用户" key="user">
+                <TabPane tab="Пользователь" key="user">
                     {searchResult.users.length === 0 ? (
                         <p className={Style.none}>
-                            没有搜索到内容, 换个关键字试试吧~~
+                            Контент не найден, попробуйте другое ключевое слово~
                         </p>
                     ) : (
                         <div className={`${Style.userList} ${Style.only}`}>
@@ -268,10 +268,10 @@ function FunctionBar() {
                         </div>
                     )}
                 </TabPane>
-                <TabPane tab="群组" key="group">
+                <TabPane tab="Группа" key="group">
                     {searchResult.groups.length === 0 ? (
                         <p className={Style.none}>
-                            没有搜索到内容, 换个关键字试试吧~~
+                            Контент не найден, попробуйте другое ключевое слово~
                         </p>
                     ) : (
                         <div className={`${Style.groupList} ${Style.only}`}>
