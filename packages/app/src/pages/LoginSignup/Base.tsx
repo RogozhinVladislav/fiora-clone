@@ -41,7 +41,7 @@ export default function Base({
         <PageContainer>
             <View style={styles.container}>
                 <Form>
-                    <Label style={styles.label}>用户名</Label>
+                    <Label style={styles.label}>имя пользователя</Label>
                     <TextInput
                         style={[styles.input]}
                         // @ts-ignore

@@ -112,7 +112,7 @@ function ChatInput() {
         return (
             <div className={Style.chatInput}>
                 <p className={Style.guest}>
-                    游客朋友你好, 请
+                    Привет друзья туристы, пожалуйста
                     <b
                         className={Style.guestLogin}
                         onClick={() =>
@@ -120,9 +120,9 @@ function ChatInput() {
                         }
                         role="button"
                     >
-                        登录
+                        войдите
                     </b>
-                    后参与聊天
+                    для участия в чате
                 </p>
             </div>
         );
@@ -620,10 +620,10 @@ function ChatInput() {
                 overlay={
                     <div className={Style.featureDropdown}>
                         <Menu onClick={handleFeatureMenuClick}>
-                            <MenuItem key="huaji">发送滑稽</MenuItem>
-                            <MenuItem key="image">发送图片</MenuItem>
-                            <MenuItem key="code">发送代码</MenuItem>
-                            <MenuItem key="file">发送文件</MenuItem>
+                            <MenuItem key="huaji">отправить смешно</MenuItem>
+                            <MenuItem key="image">отправить фотографии</MenuItem>
+                            <MenuItem key="code">Отправить код</MenuItem>
+                            <MenuItem key="file">Отправить файлы</MenuItem>
                         </Menu>
                     </div>
                 }

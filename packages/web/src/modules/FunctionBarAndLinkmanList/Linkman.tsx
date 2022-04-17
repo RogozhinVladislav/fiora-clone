@@ -36,7 +36,7 @@ function Linkman(props: LinkmanProps) {
             return Time.getHourMinute(time);
         }
         if (Time.isYesterday(nowTime, time)) {
-            return '昨天';
+            return 'вчера';
         }
         return Time.getMonthDate(time);
     }

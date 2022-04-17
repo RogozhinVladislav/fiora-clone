@@ -120,37 +120,37 @@ function App({ title, primaryColor, isLogin }: Props) {
                         <Scene
                             key="login"
                             component={Login}
-                            title="登录"
+                            title="Авторизоваться"
                             {...sceneCommonProps}
                         />
                         <Scene
                             key="signup"
                             component={Signup}
-                            title="注册"
+                            title="Регистрация"
                             {...sceneCommonProps}
                         />
                         <Scene
                             key="groupProfile"
                             component={GroupProfile}
-                            title="群组资料"
+                            title="Информация о группе"
                             {...sceneCommonProps}
                         />
                         <Scene
                             key="userInfo"
                             component={UserInfo}
-                            title="个人信息"
+                            title="персональная информация"
                             {...sceneCommonProps}
                         />
                         <Scene
                             key="groupInfo"
                             component={GroupInfo}
-                            title="群组信息"
+                            title="информация о группе"
                             {...sceneCommonProps}
                         />
                         <Scene
                             key="searchResult"
                             component={SearchResult}
-                            title="搜索结果"
+                            title="результаты поиска"
                             {...sceneCommonProps}
                         />
                     </Stack>

@@ -167,7 +167,7 @@ export async function changeGroupAvatar(groupId: string, avatar: string) {
 }
 
 /**
- * 创建群组
+ * Создать группу
  * @param name 群组名
  */
 export async function createGroup(name: string) {

@@ -92,7 +92,7 @@ function Message({
             return Time.getHourMinute(createTime);
         }
         if (Time.isYesterday(nowTime, createTime)) {
-            return `昨天 ${Time.getHourMinute(createTime)}`;
+            return `вчера ${Time.getHourMinute(createTime)}`;
         }
         if (Time.isSameYear(nowTime, createTime)) {
             return `${Time.getMonthDate(createTime)} ${Time.getHourMinute(

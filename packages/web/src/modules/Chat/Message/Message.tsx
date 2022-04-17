@@ -139,7 +139,7 @@ class Message extends Component<MessageProps, MessageState> {
             return Time.getHourMinute(messageTime);
         }
         if (Time.isYesterday(nowTime, messageTime)) {
-            return `昨天 ${Time.getHourMinute(messageTime)}`;
+            return `вчера ${Time.getHourMinute(messageTime)}`;
         }
         return `${Time.getMonthDate(messageTime)} ${Time.getHourMinute(
             messageTime,

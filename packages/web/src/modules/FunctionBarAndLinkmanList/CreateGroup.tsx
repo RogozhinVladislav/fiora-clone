@@ -29,9 +29,9 @@ function CreateGroup(props: CreateGroupProps) {
     }
 
     return (
-        <Dialog title="创建群组" visible={visible} onClose={onClose}>
+        <Dialog title="Создать группу" visible={visible} onClose={onClose}>
             <div className={Style.container}>
-                <h3 className={Style.text}>请输入群组名</h3>
+                <h3 className={Style.text}>Пожалуйста, введите название группы</h3>
                 <Input
                     className={Style.input}
                     value={groupName}
